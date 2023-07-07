@@ -5,7 +5,6 @@ let collection=[];
 
 function addToCollection(title,artist,yearPublished){
     //create an object having the above properties
-    console.log('I am inside the function');
     let collectionObject ={
         titleObject:title,
         artistObject:artist,
@@ -19,5 +18,5 @@ function addToCollection(title,artist,yearPublished){
 
 //test the function
 console.log('My collection is:', collection);
-console.log('Adding to my collection', addToCollection('Asiya','Mohamed',2019));
+console.log('Adding to my collection', addToCollection('Phone Numbers','Dominic Fike',2019));
 console.log('My collection is now:', collection);
