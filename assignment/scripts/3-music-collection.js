@@ -42,22 +42,20 @@ function showCollection(array){
 //test the function 
 showCollection(collection);
 
+
 function findByArtist(artist){
-    console.log('inside  the function');
     //Create an array to hold any results, empty to start
-    let array=[];
+    let array =[];
+    for(let i=0; i<collection.length;i++){
         //add any objects with a matching artist to the array.
-        if(array.artist == artist){
-            console.log('inside the if loop');
-            array += artist;
-        }//end match
-        //if no results are found, return an empty array.
-        else{
-            console.log('inside the else loop');
-            array=[];
-        }//end not a match
+        if(collection[i].artist == artist){
+            array.push(collection[i]);
+        }
+    }
     return array;
-}//end findByArtist
+}
 
 //test the function
+console.log(findByArtist('Clinton Kane'));
 console.log(findByArtist('Dominic Fike'));
+console.log(findByArtist('Asiya Mohamed'));
