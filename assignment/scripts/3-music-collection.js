@@ -17,14 +17,13 @@ function addToCollection(title,artist,yearPublished){
 }//end addToCollection
 
 //test the function
-console.log('My collection is:', collection);
 addToCollection('Phone Numbers','Dominic Fike',2019);
 addToCollection('3 Nights','Dominic Fike',2018);
 addToCollection('Babydoll','Dominic Fike',2018);
 addToCollection('Chicken Tendies','Clinton Kane',2022);
 addToCollection('Fix it to break it','Clinton Kane',2020);
 addToCollection('Avo Toast','Clinton Kane',2022);
-console.log('My collection is now:', collection);
+console.log('My collection is:', collection);
 
 
 function showCollection(array){
