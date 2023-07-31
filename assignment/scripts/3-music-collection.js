@@ -12,8 +12,9 @@ function addToCollection(title,artist,yearPublished){
     }//end collectionObject
     //Add the new object to the end of the collection array
     collection.push(collectionObject);
+    
     //Return the newly created object
-    return collection;
+    return collectionObject;
 }//end addToCollection
 
 //test the function
@@ -23,7 +24,7 @@ addToCollection('Babydoll','Dominic Fike',2018);
 addToCollection('Chicken Tendies','Clinton Kane',2022);
 addToCollection('Fix it to break it','Clinton Kane',2020);
 addToCollection('Avo Toast','Clinton Kane',2022);
-console.log('My collection is:', collection);
+// console.log('My collection is:', addToCollection());
 
 
 function showCollection(array){
